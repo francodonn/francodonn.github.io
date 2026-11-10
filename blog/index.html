@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Blog · Franco Donnangelo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 8px;
+            padding: 0;
+            background-color: #202020;
+        }
+        .linkedin-icon, .github-icon {
+            font-size: 24px;
+            color: grey;
+            margin-right: 8px;
+        }
+
+        header {
+            background-color: #202020;
+            color: white;
+            text-align: left;
+            padding-bottom: 1em;
+            margin-left: 30%;
+            margin-right: 30%;
+            border-bottom: 2px solid white;
+        }
+
+        section {
+            font-family: Courier New;
+            margin-left: 30%;
+            margin-right: 30%;
+            color: white;
+            border-bottom: 2px solid #989898;
+            padding-bottom: 1em;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        nav.tabs {
+            margin-top: 14px;
+            display: flex;
+            gap: 24px;
+            font-family: "Courier New", monospace;
+            font-size: 16px;
+        }
+
+        nav.tabs a {
+            color: #989898;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav.tabs a:hover {
+            color: white;
+            text-decoration: none;
+            border-bottom-color: #989898;
+        }
+
+        nav.tabs a.active {
+            color: white;
+            border-bottom-color: white;
+        }
+
+        .posts {
+            list-style: none;
+            padding: 0;
+        }
+
+        .post {
+            margin-bottom: 28px;
+        }
+
+        .post .date {
+            display: block;
+            color: #989898;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .post p {
+            color: #c8c8c8;
+            margin: 6px 0 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Franco Donnangelo</h1>
+        <a href="https://www.linkedin.com/in/franco-donnangelo-3a5b5812a/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin linkedin-icon"></i>
+        </a>
+
+        <a href="https://github.com/francodonn" target="_blank" title="GitHub">
+            <i class="fab fa-github github-icon"></i>
+        </a>
+
+        <nav class="tabs">
+            <a href="../#About">About</a>
+            <a href="../#Repositories">Repositories</a>
+            <a href="../#Publications">Publications</a>
+            <a href="./" class="active">Blog</a>
+        </nav>
+    </header>
+
+    <section id="Blog">
+        <h2>Blog</h2>
+        <ul class="posts">
+            <li class="post">
+                <span class="date">November 2026</span>
+                <a href="data-storytelling-genai.html"><b>The chart isn't dead. Its job got sharper.</b></a>
+                <p>An interactive, visual reading of Ganes Kesari's MIT Sloan Management Review article on data storytelling in the generative AI era. It covers the 2×2 decision framework, the tools for each quadrant, and why data engineering sits under all of it. Built with D3.js.</p>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>
