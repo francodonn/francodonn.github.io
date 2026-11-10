@@ -59,6 +59,30 @@
             color: blue;
             text-decoration: underline;
         }
+        nav.tabs {
+            margin-top: 14px;
+            display: flex;
+            gap: 24px;
+            font-family: "Courier New", monospace;
+            font-size: 16px;
+        }
+
+        nav.tabs a {
+            color: #989898;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav.tabs a:hover {
+            color: white;
+            text-decoration: none;
+            border-bottom-color: #989898;
+        }
+
+        nav.tabs a.active {
+            color: white;
+            border-bottom-color: white;
+        }
     </style>
 </head>
 <body>
@@ -72,6 +96,13 @@
         <a href="https://github.com/francodonn" target="_blank" title="GitHub">
             <i class="fab fa-github github-icon"></i>
         </a>
+
+        <nav class="tabs">
+            <a href="#About">About</a>
+            <a href="#Repositories">Repositories</a>
+            <a href="#Publications">Publications</a>
+            <a href="blog/">Blog</a>
+        </nav>
     </header>
 
     <section id="About">
